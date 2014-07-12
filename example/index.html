@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angular mention tagging Example</title>
+  <link rel="stylesheet" href="../src/tagging.css">
+</head>
+
+<body ng-app="app" ng-controller="testController">
+  <mention-tagging ng-model="text" ng-list="list" enter="sendMessage()"></mention-tagging>
+  <button ng-click="changeList()">Change list</button>
+  <p ng-bind="text.content"/>
+
+  <h2>Messages</h2>
+  <p ng-repeat="msg in messages">{{msg}}</p>
+</body>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="app.js"></script>
+<script src="../src/tagging.js"></script>
+</html>

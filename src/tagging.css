@@ -1,0 +1,16 @@
+.mention-tagging-wrap ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+.mention-tagging-wrap ul li {
+	list-style: none;
+}
+
+.mention-tagging-wrap ul li:hover {
+	background: blue;
+}
+
+.mention-tagging-wrap .selected {
+  background: green;
+}
